@@ -1,31 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-
     extend: {
       colors: {
-        "day-00": "#FFFFFF",
-        "day-50": "rgba(48, 42, 42, 0.05)",
-        "day-150": "rgba(48, 42, 42, 0.15)",
-        "day-350": "rgba(48, 42, 42, 0.35)",
-        "day-1000": "#302A2A",
-        "night-00": "#302A2A ",
-        "night-50": "rgba(255, 255, 255, 0.05)",
-        "night-150": "rgba(255, 255, 255, 0.15)",
-        "night-350": "rgba(255, 255, 255, 0.35)",
-        "night-1000": "#FFFFFF",
+        base: {
+          10: "var(--base-10)",
+          50: "var(--base-50)",
+          150: "var(--base-150)",
+          350: "var(--base-350)",
+          1000: "var(--base-1000)",
+        },
       },
       screens: {
         lg: "1024px"
       },
       spacing: {
         1: "2px",
+        3: "6px",
+        4: "8px",
         6: "12px",
+        9: "18px",
         16: "32px",
       },
     },

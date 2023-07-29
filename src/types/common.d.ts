@@ -1,3 +1,4 @@
 export interface ElementProps {
-    clasName?: string;
+    className?: string;
+    id?: string;
 }
